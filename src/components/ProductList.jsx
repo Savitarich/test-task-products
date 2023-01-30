@@ -6,7 +6,6 @@ import ProductItem from "./ProductItem";
 const ProductList = () => {
     const [isProductsLoaded, setIsProductLoaded] = useState(false);
     const [productList, serProductList] = useState([]);
-    console.log(productList);
 
     useEffect(() => {
         setIsProductLoaded(false);

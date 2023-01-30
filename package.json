@@ -1,22 +1,28 @@
 {
   "name": "react-test-task",
   "version": "0.1.0",
+  "homepage": "https://savitarich.github.io/test-task-products/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.2",
     "axios": "^1.2.6",
     "react": "^17.0.2",
+    "react-content-loader": "^6.2.0",
     "react-dom": "^17.0.2",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
-    "sass": "^1.57.1"
+    "react-slick": "^0.29.0",
+    "sass": "^1.57.1",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build ",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

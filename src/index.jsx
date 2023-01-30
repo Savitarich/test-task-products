@@ -9,7 +9,7 @@ const rootView = document.getElementById("root");
 if (rootView) {
     ReactDOM.render(
         <React.StrictMode>
-            <Router>
+            <Router basename='/test-task-products'>
                 <App />
             </Router>
         </React.StrictMode>,

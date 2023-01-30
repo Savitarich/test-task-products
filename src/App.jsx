@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import "./styles/global.scss";
 
 import Home from "./pages/Home";
-import Product from "./pages/Product";
+import ProductPage from "./pages/ProductPage";
 
 const App = () => {
     return (
@@ -16,7 +16,7 @@ const App = () => {
                     />
                     <Route
                         path='/product/:id'
-                        element={<Product />}
+                        element={<ProductPage />}
                     />
                 </Routes>
             </main>
