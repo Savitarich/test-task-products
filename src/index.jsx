@@ -1,17 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
-import App from './App'
+import App from "./App";
 
-import './styles/index.css'
-
-const rootView = document.getElementById('root')
+const rootView = document.getElementById("root");
 
 if (rootView) {
-  ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-    rootView
-  )
+    ReactDOM.render(
+        <React.StrictMode>
+            <Router>
+                <App />
+            </Router>
+        </React.StrictMode>,
+        rootView
+    );
 }
